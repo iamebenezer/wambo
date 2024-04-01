@@ -1,0 +1,2394 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.loader img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 15rem;
+    height: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+    .loader img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.loader div.progressBar {
+    width: 50%;
+    max-width: 900px;
+    margin-top: 4rem;
+    height: 0.6rem;
+    border-radius: 30px;
+    background-color: #ddd;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+    .loader div.progressBar {
+        width: 40%;
+    }
+}
+
+.loader div.progressBar div.progress {
+    width: 10%;
+    height: 100%;
+    background-color: var(--yellow);
+    border-radius: inherit;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+div.desktop-roadmap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    div.desktop-roadmap {
+        display: none;
+    }
+}
+
+div.desktop-roadmap div.corner {
+    border-color: var(--deep-blue) !important;
+}
+
+div.desktop-roadmap div.wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border-top: 2px solid var(--yellow);
+    border-right: 2px solid var(--yellow);
+    border-width: 4px;
+    border-color: black;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+div.desktop-roadmap div.wrapper div.rd {
+    width: 50%;
+    padding: 2rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+div.desktop-roadmap div.wrapper div.rd div.overlay {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    background-color: rgba(251, 154, 36, 0.1);
+}
+
+div.desktop-roadmap div.wrapper div.rd h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    color: var(--deep-blue);
+    z-index: 9;
+}
+
+div.desktop-roadmap div.wrapper div.rd h3 {
+    color: var(--deep-blue);
+    z-index: 9;
+}
+
+div.desktop-roadmap div.wrapper div.rd p {
+    width: 70%;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    z-index: 9;
+    font-weight: 400;
+    color: var(--deep-blue);
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.corner {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 50px 50px 0;
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.corner:nth-child(1) {
+    width: 30%;
+    left: 0;
+    border: 0;
+    border-top: 3px solid;
+    border-radius: 0;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -2.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.indicator div.first-ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid var(--deep-blue);
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.indicator div.balls-container div.ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid var(--deep-blue);
+    background-color: var(--yellow);
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(1) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) {
+    border-right: 0;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.corner {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: -1.3%;
+    left: 0;
+    border: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -3.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.indicator div.first-ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.indicator div.balls-container div.ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(2) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) {
+    border: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid black;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.corner {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: -2.3%;
+    right: 0;
+    border: 0;
+    border-radius: 0 50px 50px 0;
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -4.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.indicator div.first-ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.indicator div.balls-container div.ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(3) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) {
+    border: 0;
+    border-top: 4px solid;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.corner {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -3%;
+    border-radius: 0 0px 0 0;
+    border-top: 3px solid;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -5%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.indicator div.first-ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.indicator div.balls-container div.ball {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.desktop-roadmap div.wrapper:nth-child(4) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+    div.mobile-roadmap {
+        display: none;
+    }
+}
+
+div.mobile-roadmap div.corner {
+    border-color: var(--deep-blue) !important;
+}
+
+div.mobile-roadmap div.wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border-top: 2px solid var(--yellow);
+    border-right: 2px solid var(--yellow);
+    border-width: 4px;
+    border-color: black;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+div.mobile-roadmap div.wrapper div.rd {
+    width: 100%;
+    padding: 2rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+div.mobile-roadmap div.wrapper div.rd div.overlay {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    background-color: rgba(251, 154, 36, 0.1);
+}
+
+div.mobile-roadmap div.wrapper div.rd h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    z-index: 9;
+    color: var(--deep-blue);
+}
+
+div.mobile-roadmap div.wrapper div.rd h3 {
+    z-index: 9;
+    color: var(--deep-blue);
+}
+
+div.mobile-roadmap div.wrapper div.rd p {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    z-index: 9;
+    font-weight: 400;
+    color: var(--deep-blue);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.corner {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 50px 50px 0;
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.corner:nth-child(1) {
+    width: 30%;
+    left: 0;
+    border: 0;
+    border-top: 3px solid;
+    border-radius: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -2.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(1) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) {
+    border-right: 0;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.corner {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: -0.6%;
+    left: 0;
+    border: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -3.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(2) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) {
+    border: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid black;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.corner {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -1.6%;
+    right: 0;
+    border: 0;
+    border-radius: 0 50px 50px 0;
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -4.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(3) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) {
+    border: 0;
+    border-top: 4px solid;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.corner {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: -2.3%;
+    left: 0;
+    border: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -5%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(4) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) {
+    border: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid black;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.corner {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -3%;
+    right: 0;
+    border: 0;
+    border-radius: 0 50px 50px 0;
+    border-right: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -5.5%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(5) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) {
+    border: 0;
+    border-top: 4px solid;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.corner {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: -3.8%;
+    left: 0;
+    border: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -6%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(6) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) {
+    border: 0;
+    border-top-right-radius: 0;
+    border-right: 4px solid black;
+    border-bottom-right-radius: 0;
+    display: flex;
+    border: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.corner {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -4%;
+    right: 0;
+    border: 0;
+    border-radius: 0 0px 0px 0;
+    border-right: 0px solid;
+    border-top: 3px solid;
+    border-bottom: 0px solid;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.indicator {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -6%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.indicator div.first-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+    position: absolute;
+    right: 0;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.indicator div.balls-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.indicator div.balls-container div.ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: var(--yellow);
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.icons--container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.icons--container div.icon-container {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mobile-roadmap div.wrapper:nth-child(7) div.icons--container div.icon-container div.img img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.backers {
+    background-image: radial-gradient(circle closest-corner at 60% 50%, rgba(1, 246, 250, 0.0588235294) 41%, #0c0c0c);
+    position: relative;
+}
+
+.backersMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    width: 95vw;
+    overflow: hidden;
+}
+
+.scroll-parent {
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.scroll-element a {
+    width: 100%;
+    /* margin-left: 20px; */
+}
+
+.primary {
+    animation: primary 20s linear infinite;
+}
+
+.scroll-element {
+    width: 400vw;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+}
+
+@keyframes primary {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -500%;
+    }
+}
+
+/* MEDIA QUERIES FOR SCROLL ANIMATION */
+
+@media (max-width: 639px) {
+    .scroll-element {
+        width: 800vw;
+    }
+    .primary {
+        animation: primary 20s linear infinite;
+    }
+    @keyframes primary {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -400%;
+        }
+    }
+}
+
+:root {
+    font-family: "Montserrat", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color-scheme: light dark;
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --blue: #10bddf;
+    --deep-blue: #01006f;
+    --blue2: #3b8bfc;
+    --faded-blue: #cdeeff;
+    --pink: #e4c0fe;
+    --yellow: #fb9b24;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    background: var(--blue);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #000;
+        background-color: var(--primary-color);
+    }
+    a:hover {
+        color: #ccc;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: white;
+        background-color: var(--primary-color);
+    }
+    input,
+    textarea {
+        background-color: white;
+        color: white;
+    }
+    a:hover {
+        color: #ccc;
+    }
+    label,
+    select {
+        color: black;
+    }
+    button {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+div.general--container {
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.aligner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .aligner {
+        padding-inline: 1rem;
+    }
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 700 !important;
+    color: var(--deep-blue);
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        font-size: 2.5rem;
+    }
+}
+
+p.text {
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 992px) {
+    p.text {
+        font-size: 0.75rem;
+    }
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: var(--blue2);
+    border: 3px solid var(--deep-blue);
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, var(--blue2), var(--blue2));
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: "Montserrat", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    touch-action: manipulation;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999;
+    top: 0;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+}
+
+nav div.aligner {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2rem !important;
+    padding-inline: 0rem !important;
+}
+
+@media screen and (max-width: 992px) {
+    nav div.aligner {
+        padding-inline: 2rem !important;
+        padding-block: 1.5rem;
+    }
+}
+
+nav div.aligner div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div.aligner div.logo img {
+    width: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    nav div.aligner div.logo img {
+        width: 2.6rem;
+    }
+}
+
+nav div.aligner div.logo a {
+    font-weight: 700;
+    margin-left: 1rem;
+    color: var(--deep-blue);
+    color: white;
+    font-size: 0.85rem;
+}
+
+@media screen and (min-width: 992px) {
+    nav div.aligner div.logo a {
+        display: none;
+    }
+}
+
+nav div.aligner a {
+    color: black;
+}
+
+nav div.aligner div.links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav div.aligner div.links a {
+    font-weight: 700;
+    color: var(--deep-blue);
+}
+
+@media screen and (max-width: 992px) {
+    nav div.aligner div.links a {
+        display: none;
+    }
+}
+
+nav div.aligner div.links button {
+    padding-inline: 2rem;
+    padding-block: 0.6rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, var(--yellow), var(--yellow));
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    nav div.aligner div.links button {
+        font-size: 0.65rem;
+        padding-block: 0.2rem;
+        padding-inline: 1rem;
+    }
+}
+
+nav div.aligner div.links button a {
+    display: block !important;
+}
+
+nav div.aligner div.links button svg {
+    margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    nav div.aligner div.links button svg {
+        width: 15px;
+        height: 15px;
+        margin-top: 0.4rem;
+    }
+}
+
+.sp--container {
+    background: #fb9b24;
+    padding-inline: 8rem;
+    padding-block: 3rem;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+    .sp--container {
+        padding-inline: 2rem;
+    }
+}
+
+.sp--container div.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .sp--container div.aligner {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.sp--container img {
+    width: 6rem;
+}
+
+@media screen and (max-width: 992px) {
+    .sp--container img {
+        width: 3rem;
+    }
+}
+
+div.tokeninfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(1, 0, 111, 0.11);
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    padding-block: 0.8rem;
+}
+
+div.tokeninfo h2 {
+    color: #01006f;
+    font-size: 0.75rem !important;
+}
+
+div.tokeninfo span {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding-inline: 0.5rem;
+    color: #01006f;
+}
+
+div.tokeninfo .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.addr {
+    width: 100%;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    position: relative;
+    justify-content: flex-start;
+}
+
+div.addr span {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 0.8rem;
+    overflow: hidden;
+    padding-inline: 0;
+}
+
+div.addr .copy {
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-inline: 0.2rem;
+    background: white;
+}
+
+div.addr .copy svg {
+    color: #01006f !important;
+}
+
+/*Hero section*/
+
+section.hero--section {
+    margin-top: 5rem;
+    min-height: 90vh;
+    position: relative;
+    padding-bottom: 5rem;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 25vh;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section {
+        flex-direction: column-reverse;
+        padding-inline: 0.8rem;
+        margin-top: 15vh;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section.hero--section div.tokeninfo {
+        display: none;
+    }
+}
+
+section.hero--section div.intro {
+    width: 100%;
+}
+
+section.hero--section div.intro h1 {
+    font-size: 6rem;
+    color: white;
+    margin-top: 5rem;
+    font-weight: 700;
+    word-spacing: normal;
+    word-wrap: normal;
+    position: relative;
+    z-index: 111111;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.intro h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 0rem;
+    }
+}
+
+section.hero--section div.intro p {
+    width: 50%;
+    font-size: 1.4rem;
+    color: var(--deep-blue);
+    margin-top: 0.5rem;
+    line-height: 35px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.intro p {
+        width: 100%;
+        font-size: 0.85rem;
+        line-height: normal;
+        text-align: center;
+    }
+}
+
+section.hero--section div.buttons {
+    text-align: center;
+    display: flex;
+    align-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.buttons {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+section.hero--section div.buttons button {
+    margin-top: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    position: relative;
+    min-width: 16rem;
+    color: var(--deep-blue);
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.buttons button {
+        min-width: 6rem;
+        padding-block: 0.3rem;
+        font-size: 0.75rem;
+    }
+}
+
+section.hero--section div.buttons button svg {
+    margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.buttons button svg {
+        width: 16px;
+        height: 16px;
+        margin-top: 0.4rem;
+    }
+}
+
+section.hero--section div.buttons button:nth-child(1) {
+    color: white;
+}
+
+section.hero--section div.buttons button:nth-child(2) {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, white, white);
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section div.buttons button:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+section.hero--section img {
+    width: 30rem;
+    position: absolute;
+    right: 0;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.hero--section img {
+        width: 20rem;
+        position: relative;
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.hero--section img {
+        width: 35rem;
+    }
+}
+
+/*About us */
+
+section.about--container {
+    width: 100%;
+    padding-top: 10rem;
+    background-color: var(--faded-blue);
+    padding-bottom: 12rem;
+    overflow-x: hidden;
+}
+
+section.about--container div.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0rem;
+    padding-inline: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.about--container div.aligner {
+        padding-inline: 2rem;
+        flex-direction: column;
+    }
+}
+
+section.about--container div.aligner img {
+    width: 32rem;
+    position: relative;
+    transform: translateX(0px);
+}
+
+@media screen and (max-width: 992px) {
+    section.about--container div.aligner img {
+        width: 18rem;
+        transform: translateX(0);
+    }
+}
+
+section.about--container div.aligner div.content {
+    width: 50%;
+    padding-right: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.about--container div.aligner div.content {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+section.about--container div.aligner div.content h2 {
+    color: var(--blue2);
+}
+
+@media screen and (max-width: 992px) {
+    section.about--container div.aligner div.content h2 {
+        text-align: center;
+    }
+}
+
+section.about--container div.aligner div.content p {
+    color: var(--deep-blue);
+    opacity: 0.8;
+    line-height: 28px;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    section.about--container div.aligner div.content p {
+        font-size: 0.85rem;
+        line-height: 20px;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
+
+/*Ecosystem container*/
+
+section.ecosystem--container {
+    padding-top: 12rem;
+    background-color: var(--pink);
+    padding-bottom: 12rem;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container {
+        padding-top: 6rem;
+    }
+}
+
+section.ecosystem--container div.aligner {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner {
+        flex-direction: column;
+        padding-inline: 2rem;
+        align-items: center;
+    }
+}
+
+section.ecosystem--container div.aligner div.header {
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header h2 {
+        text-align: center;
+    }
+}
+
+section.ecosystem--container div.aligner div.header p {
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header p {
+        text-align: center;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header div.box--container {
+        width: 100%;
+        gap: 0.6rem;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div {
+    height: 14rem;
+    border-radius: 20px;
+    background-color: var(--blue);
+    position: relative;
+    border: 3px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header div.box--container div {
+        height: 10rem;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div img {
+    width: 6rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header div.box--container div img {
+        width: 4rem;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2 {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 0;
+    right: 0;
+    margin-right: 0.4rem;
+    margin-top: 0.6rem;
+    color: var(--deep-blue);
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.live {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.live span {
+    font-size: 0.75rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.live span:nth-child(1) {
+    padding: 0.2rem;
+    padding-inline: 0.5rem;
+    border-radius: 10px;
+    background-color: #52be4f;
+    color: white;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.live span:nth-child(2) {
+    padding: 0.2rem;
+    padding-inline: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    color: var(--deep-blue);
+    cursor: pointer;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.live span:nth-child(2) a {
+    color: white;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.soon {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.soon span {
+    font-size: 0.75rem;
+    display: inline-block;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.soon span:nth-child(1) {
+    padding: 0.2rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    background-color: #ff0e0e;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header div.box--container div h2.soon span:nth-child(1) {
+        padding-inline: 0.5rem;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h2.soon span:nth-child(2) {
+    padding: 0.2rem;
+    padding-inline: 0.8rem;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container div.aligner div.header div.box--container div h2 {
+        font-size: 0.8rem;
+    }
+}
+
+section.ecosystem--container div.aligner div.header div.box--container div h1 {
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.6rem;
+    color: var(--deep-blue);
+    width: 100%;
+    text-align: center;
+}
+
+section.ecosystem--container img.doge {
+    width: 38rem;
+    transform: translate(3rem, 2rem);
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+    section.ecosystem--container img.doge {
+        transform: translate(0, -5rem);
+        width: 25rem;
+        margin-top: 10rem;
+    }
+}
+
+/*Tokenomics*/
+
+section.tokenomics--container {
+    width: 100%;
+    padding-top: 10rem;
+    background-color: #64cae0;
+    padding-bottom: 8rem;
+    padding-inline: 5rem;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container {
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    section.tokenomics--container {
+        padding-inline: 7rem;
+    }
+}
+
+section.tokenomics--container div.aligner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section.tokenomics--container div.aligner img {
+    width: 22rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner img {
+        width: 12rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content {
+    width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content h2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.title {
+        margin-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.title h3 {
+        font-size: 0.75rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.title p {
+    font-weight: 700;
+    color: var(--deep-blue);
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.title p {
+        font-size: 0.75rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.table {
+    margin-top: 2rem;
+}
+
+section.tokenomics--container div.aligner div.content div.table div {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding-inline: 1rem;
+    margin-top: 0.6rem;
+    border-radius: 10px;
+}
+
+section.tokenomics--container div.aligner div.content div.table div.tax {
+    background-color: var(--deep-blue) !important;
+    border: 2px solid var(--deep-blue) !important;
+}
+
+section.tokenomics--container div.aligner div.content div.table div.tax h2,
+section.tokenomics--container div.aligner div.content div.table div.tax p {
+    color: white !important;
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.table div {
+        height: 2.5rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.table div h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--deep-blue);
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.table div h2 {
+        font-size: 0.85rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.table div p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+}
+
+@media screen and (max-width: 992px) {
+    section.tokenomics--container div.aligner div.content div.table div p {
+        font-size: 0.75rem;
+    }
+}
+
+section.tokenomics--container div.aligner div.content div.table div:nth-child(odd) {
+    background-color: var(--faded-blue);
+}
+
+section.tokenomics--container div.aligner div.content button {
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, var(--yellow), var(--yellow));
+}
+
+/*Roadmap*/
+
+section.roadmap--container {
+    width: 100%;
+    padding-top: 10rem;
+    background-color: var(--faded-blue);
+    padding-bottom: 2rem;
+    padding-inline: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.roadmap--container {
+        padding-inline: 2rem;
+        padding-top: 5rem;
+    }
+}
+
+section.roadmap--container div.aligner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.roadmap--container div.aligner h2 {
+    width: 100%;
+    text-align: center;
+}
+
+section.roadmap--container div.aligner img {
+    width: 35rem;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.roadmap--container div.aligner img {
+        width: 24rem;
+    }
+}
+
+/* Partners */
+
+section.partners--container {
+    width: 100%;
+    padding-top: 0rem;
+    background-color: var(--faded-blue);
+    padding-bottom: 8rem;
+    overflow-x: hidden;
+    padding-inline: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.partners--container {
+        padding-inline: 2rem;
+        padding-top: 0rem;
+    }
+}
+
+section.partners--container div.aligner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-block: 2rem;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    section.partners--container div.aligner {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+}
+
+section.partners--container div.aligner h2 {
+    width: 100%;
+    text-align: center;
+}
+
+section.partners--container div.aligner .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    white-space: nowrap;
+    animation-name: scrollLogos;
+    animation-iteration-count: infinite;
+    animation-duration: 30.5s;
+    animation-timing-function: linear;
+    margin-top: 5em;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    section.partners--container div.aligner .logos {
+        margin-top: 4rem;
+    }
+}
+
+section.partners--container div.aligner .logos img {
+    width: 12rem;
+    display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+    section.partners--container div.aligner .logos img {
+        width: 8rem;
+    }
+}
+
+section.partners--container div.aligner .logos h3 {
+    font-size: 2rem;
+    color: var(--deep-blue);
+    display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+    section.partners--container div.aligner .logos h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@keyframes scrollLogos {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+/* news outlet */
+
+section.news--container {
+    width: 100%;
+    background-color: var(--yellow);
+    padding-block: 4rem;
+    overflow-x: hidden;
+    display: flex;
+}
+
+@media screen and (max-width: 992px) {
+    section.news--container {
+        padding-block: 2rem;
+    }
+}
+
+section.news--container .logos {
+    white-space: nowrap;
+    animation: scrollLogos 20s linear infinite;
+}
+
+section.news--container .logos img {
+    width: 12rem;
+    display: inline-block;
+    margin-inline: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    section.news--container .logos img {
+        width: 8rem;
+    }
+}
+
+@keyframes scrollLogos {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    padding-block: 5rem;
+    background-color: var(--blue);
+}
+
+footer div.aligner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer div.aligner img {
+    width: 5rem;
+}
+
+footer div.aligner div.socials {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+footer div.aligner div.socials img {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    footer div.aligner div.socials img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+footer div.aligner p.email {
+    color: var(--deep-blue);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+footer div.aligner p.copyright {
+    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 992px) {
+    footer div.aligner p.copyright {
+        font-size: 0.7rem;
+    }
+}
+
+footer div.aligner div.disclaimer {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    footer div.aligner div.disclaimer {
+        font-size: 0.6rem;
+    }
+}
