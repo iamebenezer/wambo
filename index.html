@@ -19,8 +19,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
   />
-  <link rel="shortcut icon" href="/3.png" type="image/x-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="/2.png" type="image/x-icon">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         <nav>
             <div class="aligner">
                 <div class="logo">
-                    <img src="3.png" alt="byte_doge" />
+                    <img src="/2.png" alt="byte_doge" />
                 </div>
                 <div class="links">
                     <a href="#">Home</a>
@@ -115,7 +115,103 @@
                 </div>
             </div>
         </section>
+        <style>
+            /* Common styles */
+.grid {
+    display: grid;
+}
 
+.grid-cols-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.place-items-center {
+    place-items: center;
+}
+
+.gap-8 > * {
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-32 {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.shadow-md,
+.shadow-black {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.w-80 {
+    width: 20rem;
+}
+
+.text-black {
+    color: #000;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .md-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .w-80 {
+        width: 100%;
+    }
+
+    .gap-8 > * {
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+}
+        </style>
             <section class="tokenomics--container">
                         <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8">
                             <div class=" justify-center items-center flex-col flex text-center">
@@ -150,7 +246,7 @@
                             </div>
                            
                             <div class=" justify-center items-center flex-col flex text-center">
-                                <img src="/2.png" class="w-32 flex flex-col justify-center items-center" alt="">
+                                <img src="/one.jpeg" class="w-32 flex flex-col justify-center items-center" alt="">
                                 <div class="bg-white shadow-md shadow-black rounded-xl w-80">
                                
                                       <h1 class="text-black font-bold p-2" style="text-transform: uppercase;"> Strong Community</h1>
@@ -227,7 +323,7 @@
                     <div class="table flex flex-col justify-center items-center">
                         <div class="card">
                             <h2>Total Supply - </h2>
-                            <p>1OM</p>
+                            <p>1OMillion</p>
                         </div>
                         <div class="card">
                             <h2>Team</h2>
