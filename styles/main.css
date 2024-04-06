@@ -1699,9 +1699,9 @@ section.hero--section img {
 
 section.about--container {
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 12px;
     background-color: var(--faded-blue);
-    padding-bottom: 12rem;
+    padding-bottom: 10px;
     overflow-x: hidden;
 }
 
@@ -1779,7 +1779,7 @@ section.about--container div.aligner div.content p {
 section.ecosystem--container {
     padding-top: 12rem;
     background-color: var(--pink);
-    padding-bottom: 12rem;
+    padding-bottom: 10px;
     overflow-x: hidden;
 }
 
@@ -1992,7 +1992,7 @@ section.ecosystem--container img.doge {
 
 section.tokenomics--container {
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 12px;
     background-color: #64cae0;
     padding-bottom: 8rem;
     padding-inline: 5rem;
@@ -2157,7 +2157,7 @@ section.tokenomics--container div.aligner div.content button {
 
 section.roadmap--container {
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 12px;
     background-color: var(--faded-blue);
     padding-bottom: 2rem;
     padding-inline: 5rem;
