@@ -348,7 +348,40 @@
                             <h2>Dev</h2>
                             <p>2%</p>
                         </div>
-                      
+                        <div class="card">
+                            <h2>Contract Address</h2>
+                            <a  id="copyText" onclick="copyToClipboard()" style="line-height: 4px; font-size: 20px; font-weight:800;">
+                                                            
+                                0x673c697216a4e2f92b<br>650c26aff90d31fe1d5b30
+                                <i class="bi bi-clipboard"></i>
+                            </a>
+                            <script>
+                                function copyToClipboard() {
+// Select the text to be copied
+const textToCopy = document.getElementById('copyText').innerText;
+
+// Create a textarea element to hold the text temporarily
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+
+// Append the textarea to the document
+document.body.appendChild(textarea);
+
+// Select the text in the textarea
+textarea.select();
+
+// Copy the selected text
+document.execCommand('copy');
+
+// Remove the textarea
+document.body.removeChild(textarea);
+
+// Alert the user that the text has been copied (optional)
+alert('Text copied to clipboard!');
+}
+
+                                    </script>
+                        </div>
                     </div>
                     <!-- <button class="btn">Buy/Sell Tax: 0%</button> -->
                 </div>
